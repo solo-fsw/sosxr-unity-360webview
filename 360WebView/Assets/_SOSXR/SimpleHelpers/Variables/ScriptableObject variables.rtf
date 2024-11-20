@@ -1,0 +1,13 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 This is based on the work by Ryan Hipple, which he presented in the Unity 2017 conference.\
+Creating ScriptableObjects for each variable allows them to be referenced by multiple scripts quite easily. \
+\
+The downside is, that SOs cannot retain any changes to data you provide in in a Build of the program, once you change scene. That is a bit of a pity, since then a variable changed in Scene 1 will be reset to it\'92s original value once you go to Scene 2. To circumvent this, you can store all Scriptable Object variables in a DontDestroyOnLoad script which is present in the first Scene. This then makes sure the data is retained for the duration of the program. \
+\
+}
