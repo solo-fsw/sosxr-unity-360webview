@@ -59,4 +59,4 @@
 *.dll filter=lfs diff=lfs merge=lfs -text
 *.bundle filter=lfs diff=lfs merge=lfs -text
 *.app filter=lfs diff=lfs merge=lfs -text
-WebView.app/Contents/Frameworks/Chromium[[:space:]]Embedded[[:space:]]Framework.framework/Chromium[[:space:]]Embedded[[:space:]]Framework filter=lfs diff=lfs merge=lfs -text
+/360WebView/Assets/Vuplex/WebView/Standalone/Mac/Plugins/VuplexWebViewMac.bundle/Contents/Frameworks/Vuplex[[:space:]]WebView.app/Contents/Frameworks/Chromium[[:space:]]Embedded[[:space:]]Framework.framework/Chromium[[:space:]]Embedded[[:space:]]Framework filter=lfs diff=lfs merge=lfs -text
