@@ -1,3 +1,0 @@
-repository "360WebView@mrstruijk@cloud"
-  path "/"
-    smartbranch "/main/360WebView/Video360/VuPlex"
