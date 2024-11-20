@@ -2,7 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 
-# Maarten Folders: (# A starting /, such as in /[Bb]uilds/, will only look in the root directory...)
+# Folders. Starting /, such as in /[Bb]uilds/, will only look in the root directory...)
 [Bb]uild/
 [Bb]uilds/
 _[Bb]uilds/
