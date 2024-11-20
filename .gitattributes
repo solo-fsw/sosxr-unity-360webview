@@ -57,3 +57,4 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 # Other
 *.dll filter=lfs diff=lfs merge=lfs -text
+*.bundle filter=lfs diff=lfs merge=lfs -text
