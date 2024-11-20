@@ -9,19 +9,107 @@
       },
       "hash": "53b9bed8338295e685fedd94dd0bd24aa5b5bc3c"
     },
-    "com.mischief.markdownviewer": {
-      "version": "https://github.com/gwaredd/UnityMarkdownViewer.git",
+    "com.danieleverland.scriptableobjectarchitecture": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-scriptableobjectarchitecture.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "d4a969bb6f29adff8830f4226cad9a81b4b0a6af"
+      "hash": "f3e9d33dbf25b9da6ed00bc432a3c505ffe73938"
+    },
+    "com.jknight.swatchr": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-swatchr.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "5fde6709cd4f30e1e142652ee8833fb29cb2a216"
+    },
+    "com.kylewbanks.scenerefattribute": {
+      "version": "https://github.com/KyleBanks/scene-ref-attribute.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "8d3a0ee421588faaf373e0fe4b8f4577a522f029"
+    },
+    "com.mischief.markdownviewer": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-markdownviewer.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "e43b14c8df5b501cb899743df06791c3dc5f5e91"
+    },
+    "com.sosxr.additionalgizmos": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-additionalgizmos.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2dc5e022f573256b5c87c03c24b266ec92c362a5"
+    },
+    "com.sosxr.additionalunityevents": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-additionalunityevents.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.inputsystem": "1.8.1"
+      },
+      "hash": "bb40d79af972ab4f0988d542b2cecf5c99badd89"
+    },
+    "com.sosxr.assetdependency": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-assetdependency.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "a37cebff6f5b7614916557a033c57c3657e2b09b"
+    },
+    "com.sosxr.buildhelpers": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-buildhelpers.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.textmeshpro": "3.0.9"
+      },
+      "hash": "67dc3f09759ae14285faa405cde26a11294f9422"
+    },
+    "com.sosxr.editortools": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-editortools.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "cda27422885b00baa52841a180f1b93b8f877224"
     },
     "com.sosxr.enhancedlogger": {
-      "version": "https://github.com/mrstruijk/EnhancedLogger.git",
+      "version": "https://github.com/solo-fsw/sosxr-unity-enhancedlogger.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "f997f9acb301f4868bbea1c4f0009b350039e2b3"
+      "hash": "cb6ea3cdda6ccf9509aa91e9fa81a3552b18ab93"
+    },
+    "com.sosxr.extensionmethods": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-extensionmethods.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "5bd9edb5170149d217da5ba5c819bc397d7dcfda"
+    },
+    "com.sosxr.readmehelpers": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-readmehelpers.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "afa14ec466d927d00206dc5381244b487c7a6f5b"
+    },
+    "com.sosxr.simplehelpers": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-simplehelpers.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "39b371b270aa222e5419b32d70b515b8b7ce8e70"
+    },
+    "com.tarodev.autosave": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-autosave.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c345bbb6e36f46a849f2b1f809bbfa42d1705a66"
     },
     "com.unity.adaptiveperformance": {
       "version": "5.1.0",
@@ -70,6 +158,19 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.cloud.gltfast": {
+      "version": "6.8.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.burst": "1.8.4",
+        "com.unity.collections": "1.5.1",
+        "com.unity.mathematics": "1.3.1",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.collab-proxy": {
       "version": "2.5.2",
       "depth": 0,
@@ -79,7 +180,7 @@
     },
     "com.unity.collections": {
       "version": "2.5.1",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.burst": "1.8.17",
@@ -196,7 +297,14 @@
     },
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.4",
-      "depth": 3,
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -294,7 +402,7 @@
     },
     "com.unity.test-framework.performance": {
       "version": "3.0.3",
-      "depth": 3,
+      "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.unity.test-framework": "1.1.31",
@@ -311,6 +419,14 @@
         "com.unity.settings-manager": "1.0.1"
       },
       "url": "https://packages.unity.com"
+    },
+    "com.unity.textmeshpro": {
+      "version": "3.0.9",
+      "depth": 1,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.ugui": "2.0.0"
+      }
     },
     "com.unity.timeline": {
       "version": "1.8.7",
@@ -452,6 +568,15 @@
         "com.unity.xr.legacyinputhelpers": "2.1.2"
       },
       "url": "https://packages.unity.com"
+    },
+    "com.yasirkula.ingamedebugconsole": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-ingamedebugconsole.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.modules.androidjni": "1.0.0"
+      },
+      "hash": "518f8a06d18c71ea70924a4f813d4ca664281706"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
