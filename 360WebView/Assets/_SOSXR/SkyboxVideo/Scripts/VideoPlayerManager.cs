@@ -7,6 +7,7 @@ using SOSXR.EditorTools;
 using SOSXR.EnhancedLogger;
 using SOSXR.Extensions;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Video;
 
 
@@ -24,7 +25,7 @@ public class VideoPlayerManager : MonoBehaviour
     [SerializeField] public List<VideoSettingsCustom> Clips;
     [SerializeField] [DisableEditing] private List<VideoSettingsCustom> m_randomizedClipList;
     [SerializeField] [Range(0, 60)] private float m_betweenEachClipPauseDuration = 2.5f;
-
+[SerializeField] private UnityEvent<string> VideoClipStarted;
 
     [Header("Info")]
     [SerializeField] [DisableEditing] public string CurrentClipName;
@@ -78,14 +79,14 @@ public class VideoPlayerManager : MonoBehaviour
 
         if (m_startAutomatically)
         {
-            StartPlayer(-1);
+            StartPlayer(null);
         }
     }
 
 
     private void OnEnable()
     {
-        EventsSystem.KeyCodeEntered += StartPlayer;
+        //EventsSystem.KeyCodeEntered += StartPlayer;
         VideoPlayer.errorReceived += ReceivedAnError;
     }
 
@@ -96,7 +97,7 @@ public class VideoPlayerManager : MonoBehaviour
     }
 
 
-    private void StartPlayer(int unused)
+    public void StartPlayer(string unused)
     {
         if (Clips.Count == 0)
         {
@@ -125,7 +126,7 @@ public class VideoPlayerManager : MonoBehaviour
             {
                 this.Debug("Playing clip", clip.ClipName, "from", m_randomizedClipList.Count, "clips.");
 
-                EventsSystem.VideoClipStarted?.Invoke(clip.ClipName);
+                VideoClipStarted?.Invoke(clip.ClipName);
 
                 CurrentClipName = clip.ClipName;
 
@@ -240,7 +241,7 @@ public class VideoPlayerManager : MonoBehaviour
 
     private void OnDisable()
     {
-        EventsSystem.KeyCodeEntered -= StartPlayer;
+        //EventsSystem.KeyCodeEntered -= StartPlayer;
         VideoPlayer.errorReceived -= ReceivedAnError;
 
         StopAllCoroutines();

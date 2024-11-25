@@ -1,32 +1,41 @@
 using mrstruijk.Events;
+using SOSXR.EnhancedLogger;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 public class HandleConfigData : MonoBehaviour
 {
     public ConfigData ConfigData;
+    
+    [SerializeField] private UnityEvent ConfigInformationChanged;
 
 
     private void Awake()
     {
         ConfigData.LoadConfig();
     }
+    
 
-
-    private void OnEnable()
-    {
-        EventsSystem.KeyCodeEntered += AddParticipantNumber;
-        EventsSystem.VideoClipStarted += ChangeVideoClipName;
-    }
-
-
-    private void ChangeVideoClipName(string videoClipName)
+    public void ChangeVideoClipName(string videoClipName)
     {
         AmendConfigData(videoClipName: videoClipName);
     }
 
+    
+    public void AddParticipantNumber(string participantNumber)
+    {
+        if (int.TryParse(participantNumber, out var result))
+        {
+            AmendConfigData(result);
+        }
+        else
+        {
+            this.Error("Participant number is not a number");
+        }
+    }
 
-    private void AddParticipantNumber(int participantNumber)
+    public void AddParticipantNumber(int participantNumber)
     {
         AmendConfigData(participantNumber);
     }
@@ -44,13 +53,8 @@ public class HandleConfigData : MonoBehaviour
             ConfigData.VideoName = videoClipName;
         }
 
-        EventsSystem.ConfigInformationChanged?.Invoke();
+      ConfigInformationChanged?.Invoke();
     }
 
 
-    private void OnDisable()
-    {
-        EventsSystem.KeyCodeEntered -= AddParticipantNumber;
-        EventsSystem.VideoClipStarted -= ChangeVideoClipName;
-    }
 }

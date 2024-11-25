@@ -21,7 +21,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "56e008b3bb10afad7ec09db251ce9b9e719c9580"
+      "hash": "051f18a23f06c28e4be01218441eb5f39105524a"
     },
     "com.sosxr.enhancedlogger": {
       "version": "https://github.com/mrstruijk/EnhancedLogger.git",
@@ -42,7 +42,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "8f12c464efbf04460b7e74b4f46f3949c105f79b"
+      "hash": "66f351e1d61f7b318ac4b9518b713ef1d96ef295"
     },
     "com.sosxr.readmehelpers": {
       "version": "https://github.com/solo-fsw/sosxr-unity-readmehelpers.git",
@@ -56,7 +56,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "7c80cd9ce95b208eae3d38c5224cc470686b2a49"
+      "hash": "17e54a146746a4ad349d5acfea70b6d8842dbd44"
     },
     "com.tarodev.autosave": {
       "version": "https://github.com/solo-fsw/sosxr-unity-autosave.git",

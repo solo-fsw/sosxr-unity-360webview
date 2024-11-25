@@ -137,3 +137,7 @@ public class PermutationContainer<T>
 {
     public List<T> Permutations; // This holds the actual permutation
 }
+ 
+ 
+ 
+ 
