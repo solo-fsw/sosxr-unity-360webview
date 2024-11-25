@@ -16,6 +16,13 @@
       "dependencies": {},
       "hash": "d4a969bb6f29adff8830f4226cad9a81b4b0a6af"
     },
+    "com.sosxr.editortools": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-editortools.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "56e008b3bb10afad7ec09db251ce9b9e719c9580"
+    },
     "com.sosxr.enhancedlogger": {
       "version": "https://github.com/mrstruijk/EnhancedLogger.git",
       "depth": 0,
@@ -23,12 +30,33 @@
       "dependencies": {},
       "hash": "f997f9acb301f4868bbea1c4f0009b350039e2b3"
     },
+    "com.sosxr.extensionmethods": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-extensionmethods.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "5bd9edb5170149d217da5ba5c819bc397d7dcfda"
+    },
+    "com.sosxr.keyboard": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-keyboard.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "8f12c464efbf04460b7e74b4f46f3949c105f79b"
+    },
     "com.sosxr.readmehelpers": {
       "version": "https://github.com/solo-fsw/sosxr-unity-readmehelpers.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
       "hash": "afa14ec466d927d00206dc5381244b487c7a6f5b"
+    },
+    "com.sosxr.simplehelpers": {
+      "version": "https://github.com/solo-fsw/sosxr-unity-simplehelpers.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "7c80cd9ce95b208eae3d38c5224cc470686b2a49"
     },
     "com.tarodev.autosave": {
       "version": "https://github.com/solo-fsw/sosxr-unity-autosave.git",
@@ -125,7 +153,7 @@
     },
     "com.unity.ext.nunit": {
       "version": "2.0.5",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -154,8 +182,8 @@
       }
     },
     "com.unity.ide.rider": {
-      "version": "3.0.31",
-      "depth": 1,
+      "version": "3.0.34",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.ext.nunit": "1.0.6"

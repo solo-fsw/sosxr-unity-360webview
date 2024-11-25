@@ -1,11 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using mrstruijk;
 using mrstruijk.Events;
-using mrstruijk.Extensions;
 using SOSXR;
+using SOSXR.EditorTools;
 using SOSXR.EnhancedLogger;
+using SOSXR.Extensions;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -126,7 +126,7 @@ public class VideoPlayerManager : MonoBehaviour
                 this.Debug("Playing clip", clip.ClipName, "from", m_randomizedClipList.Count, "clips.");
 
                 EventsSystem.VideoClipStarted?.Invoke(clip.ClipName);
-                
+
                 CurrentClipName = clip.ClipName;
 
                 GetURLAndPrepare(clip);
@@ -142,7 +142,7 @@ public class VideoPlayerManager : MonoBehaviour
 
                 SetAudioSourceSettings(clip);
 
-                CurrentClipDuration = (float) VideoPlayer.length.RoundCorrectly();
+                CurrentClipDuration = (float) VideoPlayer.length.RoundCorrectly(0);
 
                 VideoPlayer.Play();
 
@@ -157,7 +157,7 @@ public class VideoPlayerManager : MonoBehaviour
                 yield return new WaitForSeconds(m_betweenEachClipPauseDuration);
             }
         } while (m_configData.PlayWay == PlayWay.Repeat);
-        
+
         this.Debug("Done playing all clips");
     }
 

@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using mrstruijk.Extensions;
+using SOSXR.Extensions;
 using UnityEngine;
 
 
@@ -29,7 +29,7 @@ namespace SOSXR
                     var index = LastDigitModulus;
 
                     Debug.LogWarning(index);
-                    
+
                     if (index < 0)
                     {
                         index = 0;

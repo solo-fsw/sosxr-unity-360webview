@@ -1,4 +1,4 @@
-using mrstruijk;
+using SOSXR.EditorTools;
 using SOSXR.EnhancedLogger;
 using UnityEngine;
 
@@ -16,9 +16,9 @@ public class LoadConfigDataWebViewURL : BaseWebViewURL
         {
             m_variablesString = $"?{nameof(m_configData.TaskName)}={m_configData.TaskName}&{nameof(m_configData.VideoName)}={m_configData.VideoName}&{nameof(m_configData.PPN)}={m_configData.PPN}";
         }
-        
+
         BaseURL = m_configData.WebsiteUrl + m_variablesString;
-        
+
         m_configData.WebsiteUrl = BaseURL;
 
         this.Debug(BaseURL);
